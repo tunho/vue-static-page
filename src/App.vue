@@ -140,7 +140,7 @@ const wishes = [
   '사랑이 깃들고 웃음이 넘치길 😊',
 ]
 
-const currentWish = ref<string>(wishes[0])
+const currentWish = ref<string>(wishes[0] ?? "")
 const showLanterns = ref(true)
 const moonScale = ref<number>(1.0)
 const calm = ref(false)
@@ -151,7 +151,7 @@ let sid = 0
 
 function shuffleWish() {
   const pick = Math.floor(Math.random() * wishes.length)
-  currentWish.value = wishes[pick]
+  currentWish.value = wishes[pick] ?? ""
 }
 
 function spark() {
