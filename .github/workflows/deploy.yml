@@ -17,6 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # 패키지 설치
   build:
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +32,7 @@ jobs:
 
       - name: Install deps
         run: npm ci
-
+      # 정적으로 파일 생성
       - name: Build
         run: npm run build
 
@@ -39,7 +40,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
+  # 자동적으로 배포
   deploy:
     needs: build
     runs-on: ubuntu-latest
