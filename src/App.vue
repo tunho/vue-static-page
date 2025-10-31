@@ -330,11 +330,11 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-
 .wish-actions { margin-top: 14px; display: flex; gap: 10px; justify-content: center; }
 .btn {
   padding: 10px 14px; border-radius: 999px; cursor: pointer;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.06); color: var(--ink);
+  border: 1px solid black;
+  background: black; color: var(--ink);
   backdrop-filter: blur(6px);
 }
-.btn:hover { border-color: rgba(255,255,255,.28); }
+.btn:hover { border-color: white; }
 .btn.outline { background: transparent; }
 
 /* 반짝이 */
