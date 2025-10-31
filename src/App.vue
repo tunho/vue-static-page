@@ -89,9 +89,6 @@
         <p class="wish-text">{{ currentWish }}</p>
         <div class="wish-actions">
           <button class="btn" @click.stop="shuffleWish">소원 바꾸기</button>
-          <button class="btn outline" @click.stop="toggleCalm">
-            {{ calm ? '반짝임 켜기' : '반짝임 끄기' }}
-          </button>
         </div>
       </div>
 
@@ -329,7 +326,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-
 .wish-text {
   font-size: clamp(20px, 3.2vw, 34px);
   line-height: 1.25;
-  background: linear-gradient(90deg, black 0%, black 50%, black 100%);
+  background: linear-gradient(90deg, white 0%, black 50%, white 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
   text-shadow: 0 2px 14px rgba(255, 228, 138, .15);
 }
