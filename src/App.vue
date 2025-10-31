@@ -165,9 +165,6 @@ function spark() {
   }, 2000)
 }
 
-function toggleCalm() {
-  calm.value = !calm.value
-}
 
 async function share() {
   const text = `풍성한 한가위 🍂\n${currentWish.value}`
