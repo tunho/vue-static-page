@@ -209,7 +209,7 @@ const wishes = [
 
 const currentWish = ref<string>(wishes[0] ?? "")
 const showLanterns = ref(true)
-const moonScale = ref<number>(1.0)
+const moonScale = ref<number>(0.5)
 const calm = ref(false)
 
 type Spark = { id: number; x: number; y: number }
