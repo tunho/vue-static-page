@@ -1,5 +1,29 @@
-# Vue 3 + TypeScript + Vite
+🌕 풍성한 한가위 웹페이지
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+배포 링크: https://tunho.github.io/vue-static-page/
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+🎯 프로젝트 개요
+
+Vue 3 + TypeScript + Vite 기반으로 제작한 한가위 테마 랜딩 페이지입니다.
+보름달, 전통 문양, 전통 음식과 놀이 소개 등을 통해 따뜻한 추석 분위기를 담았습니다.
+
+
+💡 주요 기능 및 구성
+구분	설명
+섹션 0 - 소원 랜덤으로 보여줌
+섹션 1 — 한가위 이야기	명절의 유래와 의미 소개
+섹션 2 — 전통 음식	송편, 전, 과일 이미지 + 짧은 설명
+섹션 3 — 전통 놀이	윷놀이, 투호놀이, 강강술래 소개
+시각 효과	보름달, 반짝이, 등불, 학 애니메이션
+반응형 디자인	데스크톱/모바일 모두 자연스럽게 표시
+한글 폰트 적용	Noto Sans KR 폰트로 자연스러운 렌더링
+
+🧠 Prompt (GPT / Gemini 생성용)
+
+Prompt:
+"vue + ts + vite로 한가위에 잘 어울리는 웹페이지를 하나 만들고 싶은데. app.vue 파일 하나 만들어",
+"기존 페이지에 "페이지의 메인 카피, 섹션 제목, 전통 음식/놀이 소개, 간단한 설명/스토리" 추가"
+
+
+이 프롬프트로 생성된 텍스트를 페이지에 직접 반영했습니다.
