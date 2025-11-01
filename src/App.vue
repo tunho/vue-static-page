@@ -336,7 +336,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-
 }
 
 .moon {
-  position: absolute; top: 34%; left: 50%;
+  position: absolute; top: 32%; left: 50%;
   width: clamp(220px, 40vw, 420px); height: auto;
   filter: drop-shadow(0 16px 60px rgba(246,200,92,.35));
   transition: transform .25s ease;
