@@ -1,6 +1,8 @@
 🌕 풍성한 한가위 웹페이지
 
 배포 링크: https://tunho.github.io/vue-static-page/
+(https://tunho.github.io/vue-static-page/)
+
 
 
 🎯 프로젝트 개요
