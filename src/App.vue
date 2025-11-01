@@ -29,30 +29,12 @@
         </button>
       </div>
     </header>
-
+     
     <section class="hero" @click="spark()">
       <!-- 하늘 배경 결 -->
       <div class="hanji" aria-hidden="true"></div>
 
-      <!-- 달 -->
-      <svg
-        class="moon"
-        :style="{ transform: `translate(-50%, -50%) scale(${moonScale})` }"
-        viewBox="0 0 200 200"
-        aria-label="추석 보름달"
-      >
-        <defs>
-          <radialGradient id="g" cx="50%" cy="45%" r="60%">
-            <stop offset="0%" stop-color="#fff9d6" />
-            <stop offset="55%" stop-color="#ffe48a" />
-            <stop offset="100%" stop-color="#f6c85c" />
-          </radialGradient>
-        </defs>
-        <circle cx="100" cy="100" r="90" fill="url(#g)" />
-        <circle cx="70" cy="85" r="10" fill="#e7b957" opacity="0.35" />
-        <circle cx="125" cy="120" r="14" fill="#e7b957" opacity="0.28" />
-        <circle cx="105" cy="70" r="6" fill="#e7b957" opacity="0.3" />
-      </svg>
+  
 
       <!-- 학 (장식) -->
       <div class="crane c1" aria-hidden="true">
@@ -82,15 +64,101 @@
           <div class="rib"></div><div class="rib"></div><div class="rib"></div>
         </div>
         <div class="tassel"></div>
-      </div>
+      </div>          <!-- 달 -->
+      <svg
+        class="moon"
+        :style="{ transform: `translate(-50%, -50%) scale(${moonScale})` }"
+        viewBox="0 0 200 200"
+        aria-label="추석 보름달"
+      >
+        <defs>
+          <radialGradient id="g" cx="50%" cy="45%" r="60%">
+            <stop offset="0%" stop-color="#fff9d6" />
+            <stop offset="55%" stop-color="#ffe48a" />
+            <stop offset="100%" stop-color="#f6c85c" />
+          </radialGradient>
+        </defs>
+        <circle cx="100" cy="100" r="90" fill="url(#g)" />
+        <circle cx="70" cy="85" r="10" fill="#e7b957" opacity="0.35" />
+        <circle cx="125" cy="120" r="14" fill="#e7b957" opacity="0.28" />
+        <circle cx="105" cy="70" r="6" fill="#e7b957" opacity="0.3" />
+      </svg>
 
-      <!-- 소원 문구 -->
+
+          <!-- 메인 카피 (Hero) -->
+
+                <!-- 소원 문구 -->
       <div class="wish">
         <p class="wish-text">{{ currentWish }}</p>
         <div class="wish-actions">
           <button class="btn" @click.stop="shuffleWish">소원 바꾸기</button>
         </div>
       </div>
+    <section class="hero">
+      <div class="moon-bg"></div>
+      <div class="copy">
+        <h2>“달빛처럼 환하게, 마음까지 가득 채우는 한가위”</h2>
+        <p>
+          보름달 아래 모여 웃음이 번지는 밤,<br />
+          따뜻한 인연과 풍요로운 마음이 함께하는 추석의 이야기.
+        </p>
+      </div>
+    </section>
+
+    <!-- 섹션 1: 한가위 이야기 -->
+    <section class="section story">
+      <h2>🌕 한가위 이야기</h2>
+      <p>
+        한가위는 가을의 풍요로움과 함께 조상에게 감사하는 날이에요.<br />
+        수확한 곡식과 과일을 나누며, 가족 간의 정을 되새기는 소중한 명절이죠.<br />
+        둥근 달은 모두의 마음이 하나로 이어지길 바라는 상징이에요.
+      </p>
+    </section>
+
+    <!-- 섹션 2: 전통 음식 -->
+    <section class="section food">
+      <h2>🥮 전통 음식</h2>
+      <div class="grid">
+        <div class="card">
+
+          <h3>송편</h3>
+          <p>반달 모양의 떡 속에 소원을 담아요. 솔잎 향과 함께 익어가는 송편은 가족의 행복을 기원하는 마음이 담겨 있습니다.</p>
+        </div>
+        <div class="card">
+          <h3>전</h3>
+          <p>노릇하게 부친 전은 가족의 입맛과 웃음을 한가득 채워줍니다. 정성껏 부치는 손길마다 따뜻함이 깃들어요.</p>
+        </div>
+        <div class="card">
+          <h3>가을 과일</h3>
+          <p>탐스럽게 익은 배와 감, 사과는 풍요를 상징합니다. 함께 나누며 감사의 마음을 전해요.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 3: 전통 놀이 -->
+    <section class="section play">
+      <h2>🎋 전통 놀이</h2>
+      <div class="grid">
+        <div class="card">
+
+          <h3>투호놀이</h3>
+          <p>대나무 통에 화살을 던지는 놀이로 집중력과 손재주를 겨룹니다. 어른과 아이가 함께 즐길 수 있어요.</p>
+        </div>
+        <div class="card">
+          <h3>윷놀이</h3>
+          <p>‘도, 개, 걸, 윷, 모!’ 온 가족이 한자리에 모여 웃음이 넘치는 시간이에요.</p>
+        </div>
+        <div class="card">
+          <h3>강강술래</h3>
+          <p>둥근 달 아래 손을 잡고 원을 그리며 노래하고 춤추는, 조화와 평화를 상징하는 놀이입니다.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
 
       <!-- 반짝 불빛 -->
       <div
@@ -118,8 +186,10 @@
       </article>
     </section>
 
+    <!-- 마무리 -->
     <footer class="footer">
-      <small>© 2025 Hangawi · 클릭으로 반짝이를 만들 수 있어요 ✨</small>
+      <p>🌝 행복과 감사가 가득한 한가위 되세요!</p>
+      <small>© 2025 Hangawi Web · 제작자: 이준호</small>
     </footer>
   </main>
 </template>
@@ -266,7 +336,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-
 }
 
 .moon {
-  position: absolute; top: 42%; left: 50%;
+  position: absolute; top: 34%; left: 50%;
   width: clamp(220px, 40vw, 420px); height: auto;
   filter: drop-shadow(0 16px 60px rgba(246,200,92,.35));
   transition: transform .25s ease;
@@ -323,7 +393,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-
 .wish-text {
   font-size: clamp(20px, 3.2vw, 34px);
   line-height: 1.25;
-  background: linear-gradient(90deg, white 0%, black 50%, white 100%);
+  background: linear-gradient(90deg, white 0%, white 50%, white 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
   text-shadow: 0 2px 14px rgba(255, 228, 138, .15);
 }
